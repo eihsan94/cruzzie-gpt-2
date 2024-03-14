@@ -1,6 +1,6 @@
-# Create T3 App
+# CruzzieGPT
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is the best Product Ever for automation
 
 ## What's next? How do I make an app with this?
 
@@ -24,3 +24,12 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## ERD
+
+Generate ERD by typing
+
+<pre>
+yarn postinstall
+</pre>
+<img src="./public/ERD.svg" />

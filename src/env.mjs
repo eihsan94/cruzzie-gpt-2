@@ -21,6 +21,8 @@ const server = z.object({
   // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
   GOOGLE_CLIENT_ID: z.string(),
   GOOGLE_CLIENT_SECRET: z.string(),
+  NEXT_PUBLIC_OPEN_AI_ORGANIZATION_ID: z.string(),
+  NEXT_PUBLIC_OPEN_AI_API_SECRET: z.string(),
 });
 
 /**
@@ -44,7 +46,9 @@ const processEnv = {
   NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
-  // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
+  NEXT_PUBLIC_OPEN_AI_ORGANIZATION_ID:
+    process.env.NEXT_PUBLIC_OPEN_AI_ORGANIZATION_ID,
+  NEXT_PUBLIC_OPEN_AI_API_SECRET: process.env.NEXT_PUBLIC_OPEN_AI_API_SECRET,
 };
 
 // Don't touch the part below
